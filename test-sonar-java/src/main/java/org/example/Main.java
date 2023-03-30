@@ -10,27 +10,7 @@ public class Main {
     return num;  // this is never reached
   }
 
-  int myPow2(int num, int exponent) {
-    num = num * myPow(num, exponent - 1);
-    return num;  // this is never reached
-  }
-
-  int myPow3(int num, int exponent) {
-    num = num * myPow(num, exponent - 1);
-    return num;  // this is never reached
-  }
-
-  int myPow4(int num, int exponent) {
-    num = num * myPow(num, exponent - 1);
-    return num;  // this is never reached
-  }
-
-  int myPow5(int num, int exponent) {
-    num = num * myPow(num, exponent - 1);
-    return num;  // this is never reached
-  }
-
-  int myPow6(int num, int exponent) {
+  int myPow10(int num, int exponent) {
     num = num * myPow(num, exponent - 1);
     return num;  // this is never reached
   }
