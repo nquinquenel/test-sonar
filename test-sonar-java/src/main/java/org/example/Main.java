@@ -25,4 +25,9 @@ public class Main {
     return num;  // this is never reached
   }
 
+  int myPow91(int num, int exponent) {
+    num = num * myPow(num, exponent - 1);
+    return num;  // this is never reached
+  }
+
 }
