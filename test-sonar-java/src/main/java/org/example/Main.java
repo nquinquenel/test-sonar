@@ -10,4 +10,10 @@ public class Main {
     num = num * myPow(num, exponent - 1);
     return num;  // this is never reached
   }
+
+  int myPows(int num, int exponent) {
+    num = num * myPow(num, exponent - 1);
+    return num;  // this is never reached
+  }
+
 }
