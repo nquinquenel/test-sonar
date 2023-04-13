@@ -6,7 +6,7 @@ public class Main {
     }
 
 
-    int myPow(int num, int exponent) {
+    int myPow(int num, int exponent) throws ClassNotFoundException {
         num = num * myPow(num, exponent - 1);
 
         String className = System.getProperty("Main");
@@ -15,7 +15,7 @@ public class Main {
         return num;  // this is never reached
     }
 
-    int myPows(int num, int exponent) {
+    int myPows(int num, int exponent) throws ClassNotFoundException {
         num = num * myPow(num, exponent - 1);
         return num;  // this is never reached
     }
