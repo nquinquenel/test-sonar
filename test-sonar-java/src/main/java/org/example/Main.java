@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
         ExtractEntry(null);
+        Main2 m = Main2.getInstance();
     }
 
         static private String targetDirectory = "/example/directory/";
@@ -20,6 +21,7 @@ public class Main {
     public static void ExtractEntry(ZipFile zipFile) throws IOException {
 
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
+        Enumeration<? extends ZipEntry> entries2 = zipFile.entries();
         ZipEntry entry = entries.nextElement();
         InputStream inputStream = zipFile.getInputStream(entry);
 
@@ -34,7 +36,22 @@ public class Main {
         String className = System.getProperty("Main");
         Class clazz = Class.forName(className);  // Noncompliant
 
+        System.out.println("toto1");
+        System.out.println("toto1");
+        System.out.println("toto1");
 
+        return num;  // this is never reached
+    }
+
+    int myPow2(int num, int exponent) throws ClassNotFoundException {
+        num = num * myPow(num, exponent - 1);
+
+        String className = System.getProperty("Main");
+        Class clazz = Class.forName(className);  // Noncompliant
+
+        System.out.println("toto1");
+        System.out.println("toto1");
+        System.out.println("toto1");
 
         return num;  // this is never reached
     }
