@@ -3,17 +3,23 @@ package org.example;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.Enumeration;
+import java.util.Vector;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
         ExtractEntry(null);
         Main2 m = Main2.getInstance();
+
+        Vector cats = new Vector<>();
     }
 
         static private String targetDirectory = "/example/directory/";
