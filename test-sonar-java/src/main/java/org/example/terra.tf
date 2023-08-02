@@ -1,9 +1,14 @@
-resource "aws_s3_bucket" "destination_2" {
-  # checkov:skip=CKV_AWS_19: no encryption needed
-  bucket = "tf-test-bucket-destination-12345"
-  acl = var.acl
-  versioning {
-    enabled = var.is_enabled
-    mfa_delete = false
+resource roleDef "Microsoft.Authorization/roleDefinitions@2022-04-01" { // Sensitive
+  name = "example"
+  properties {
+    permissions = [
+      {
+        actions = ["*"] // Sensitive
+        notActions = []
+      }
+    ]
+    assignableScopes = [
+      subscription().id
+    ]
   }
 }
