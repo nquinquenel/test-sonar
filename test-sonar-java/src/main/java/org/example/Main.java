@@ -10,8 +10,6 @@ import java.util.Enumeration;
 import java.util.Vector;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -20,6 +18,8 @@ public class Main {
         Main2 m = Main2.getInstance();
 
         Vector cats = new Vector<>();
+        Vector catss = new Vector<>();
+        Vector catsss = new Vector<>();
     }
 
         static private String targetDirectory = "/example/directory/";
@@ -28,6 +28,7 @@ public class Main {
 
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
         Enumeration<? extends ZipEntry> entries2 = zipFile.entries();
+        Enumeration<? extends ZipEntry> entries3 = zipFile.entries();
         ZipEntry entry = entries.nextElement();
         InputStream inputStream = zipFile.getInputStream(entry);
 
