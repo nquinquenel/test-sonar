@@ -18,9 +18,6 @@ public class Main {
         Main2 m = Main2.getInstance();
 
         Vector cats = new Vector<>();
-        Vector catss = new Vector<>();
-        Vector catsss = new Vector<>();
-        Vector catssss = new Vector<>();
     }
 
         static private String targetDirectory = "/example/directory/";
