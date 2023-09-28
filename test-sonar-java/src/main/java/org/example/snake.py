@@ -1,5 +1,5 @@
-class A:
-    def __mul__(self, other, unexpected):  # Noncompliant. Too many parameters
+class C:
+    def __bool__(self):
         return 42
 
     def __add__(self):  # Noncompliant. Missing one parameter

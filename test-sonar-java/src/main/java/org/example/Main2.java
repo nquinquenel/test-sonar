@@ -10,14 +10,10 @@ public class Main2 {
 
   // private constructor to avoid client applications using the constructor
   private Main2(){
-    while (true) {
-      while (true) {
-        while (true) {
-          while (true) {
+    System.out.println("toto1");
 
-          }
-        }
-      }
+    while (true) {
+
     }
 
   }

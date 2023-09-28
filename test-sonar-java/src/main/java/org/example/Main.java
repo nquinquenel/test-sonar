@@ -6,12 +6,14 @@ import java.io.InputStream;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-import java.util.Enumeration;
+import java.util.Enumeration;   
 import java.util.Vector;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
 public class Main {
+    public static String toto = "test";
+
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
         ExtractEntry(null);
@@ -23,10 +25,12 @@ public class Main {
         static private String targetDirectory = "/example/directory/";
 
     public static void ExtractEntry(ZipFile zipFile) throws IOException {
+        toto = "tedst";
 
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
         Enumeration<? extends ZipEntry> entries2 = zipFile.entries();
         Enumeration<? extends ZipEntry> entries3 = zipFile.entries();
+
         ZipEntry entry = entries.nextElement();
         InputStream inputStream = zipFile.getInputStream(entry);
 
@@ -54,6 +58,7 @@ public class Main {
         String className = System.getProperty("Main");
         Class clazz = Class.forName(className);  // Noncompliant
 
+        System.out.println("toto1");
         System.out.println("toto1");
         System.out.println("toto1");
         System.out.println("toto1");
