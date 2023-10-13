@@ -1,10 +1,10 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 public class NewTest {
 
   @Test
-  public void shouldPass() {
+  protected void shouldPass() {
     assert(true);
   }
 

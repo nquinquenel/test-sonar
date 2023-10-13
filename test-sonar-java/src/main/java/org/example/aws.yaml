@@ -1,16 +1,1 @@
-  resource roleDef 'Microsoft.Authorization/roleDefinitions@2022-04-01' = { // Sensitive
-  name: 'example'
-
-  properties: {
-    permissions: [
-      {
-        actions: ['*'] // Sensitive
-                   notActions: []
-      }
-    ]
-      
-      assignableScopes: [
-        subscription().id
-      ]
-  }
-  }
+AKCp8vLnDPZeVA29WylUNdaT54Pg2E9rx8gJWfbPCw2Wsb0UCAEmimIPFscGbJPYEUhXVBCRQ

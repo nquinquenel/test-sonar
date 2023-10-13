@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>test-sonar-java</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -50,7 +50,7 @@
             <artifactId>kotlin-test</artifactId>
             <version>${kotlin.version}</version>
             <scope>test</scope>
-        </dependency>
+        </dependency><dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>5.8.1</version><scope>test</scope></dependency>
 
     </dependencies>
 
