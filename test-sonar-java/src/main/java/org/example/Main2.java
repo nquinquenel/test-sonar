@@ -63,7 +63,7 @@ public class Main2 {
     Files.copy(inputStream, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
   }
 
-  public static void ExtractEntry3(ZipFile zipFile) throws IOException {
+  public static void ExtractEntry4(ZipFile zipFile) throws IOException {
     var toto = "tedst";
 
     Enumeration<? extends ZipEntry> entries = zipFile.entries();
