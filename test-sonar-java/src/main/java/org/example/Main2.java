@@ -47,4 +47,19 @@ public class Main2 {
 
     Files.copy(inputStream, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
   }
+
+  public static void ExtractEntry2(ZipFile zipFile) throws IOException {
+    var toto = "tedst";
+
+    Enumeration<? extends ZipEntry> entries = zipFile.entries();
+    Enumeration<? extends ZipEntry> entries2 = zipFile.entries();
+    Enumeration<? extends ZipEntry> entries3 = zipFile.entries();
+
+    ZipEntry entry = entries.nextElement();
+    InputStream inputStream = zipFile.getInputStream(entry);
+
+    File file = new File(targetDirectory + entry.getName());
+
+    Files.copy(inputStream, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+  }
 }
