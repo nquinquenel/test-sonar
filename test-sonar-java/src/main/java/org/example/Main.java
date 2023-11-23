@@ -11,7 +11,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
 public class Main {
-    public static final String toto = "test";
+    public static String toto = "test";
 
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
