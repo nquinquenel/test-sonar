@@ -14,7 +14,7 @@ public class Main2 {
   private static final Main2 instance = new Main2();
 
   // private constructor to avoid client applications using the constructor
-  private Main2(){
+  private Main2() {
     System.out.println("toto1");
 
     while (true) {
@@ -84,6 +84,7 @@ public class Main2 {
     Enumeration<? extends ZipEntry> entries = zipFile.entries();
     Enumeration<? extends ZipEntry> entries2 = zipFile.entries();
     Enumeration<? extends ZipEntry> entries3 = zipFile.entries();
+    Enumeration<? extends ZipEntry> entries4 = zipFile.entries();
 
     ZipEntry entry = entries.nextElement();
     InputStream inputStream = zipFile.getInputStream(entry);
