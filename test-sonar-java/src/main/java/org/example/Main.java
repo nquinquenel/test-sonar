@@ -29,6 +29,7 @@ public class Main {
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
         Enumeration<? extends ZipEntry> entries2 = zipFile.entries();
         Enumeration<? extends ZipEntry> entries3 = zipFile.entries();
+        Enumeration<? extends ZipEntry> entrie4 = zipFile.entries();
 
         ZipEntry entry = entries.nextElement();
         InputStream inputStream = zipFile.getInputStream(entry);
